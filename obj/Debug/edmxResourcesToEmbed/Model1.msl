@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="Model1" />
+  <Alias Key="Target" Value="Model1.Store" />
+  <EntityContainerMapping CdmEntityContainer="Model1Container" StorageEntityContainer="Model1StoreContainer">
+    <EntitySetMapping Name="Answers">
+      <EntityTypeMapping TypeName="Model1.Answer">
+        <MappingFragment StoreEntitySet="Answers">
+          <ScalarProperty Name="AnsText" ColumnName="AnsText" />
+          <ScalarProperty Name="AnsInactive" ColumnName="AnsInactive" />
+          <ScalarProperty Name="AnsCorrect" ColumnName="AnsCorrect" />
+          <ScalarProperty Name="AnsImagePath" ColumnName="AnsImagePath" />
+          <ScalarProperty Name="AnsQueID" ColumnName="AnsQueID" />
+          <ScalarProperty Name="AnsID" ColumnName="AnsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Questions">
+      <EntityTypeMapping TypeName="Model1.Question">
+        <MappingFragment StoreEntitySet="Questions">
+          <ScalarProperty Name="QueInactive" ColumnName="QueInactive" />
+          <ScalarProperty Name="QueDropSpeed" ColumnName="QueDropSpeed" />
+          <ScalarProperty Name="QueQuestion" ColumnName="QueQuestion" />
+          <ScalarProperty Name="QueID" ColumnName="QueID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

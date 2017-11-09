@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model2.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="Model2StoreContainer">
+    <EntitySet Name="Table1" EntityType="Model2.Store.Table1" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Table1">
+    <Key>
+      <PropertyRef Name="test" />
+    </Key>
+    <Property Name="test" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815" ModuleId="TriviaGame" />
+  <Module PersistentId="4DE23893-27E7-423F-9BB6-BA21DAC2C45E" ModuleId="Microsoft.Samples.Kinect.WpfViewers" />
+  <Module PersistentId="C6F9C31B-6130-4443-A5CC-EF0664552ECD" ModuleId="Microsoft.Kinect.Toolkit" />
+</Modules>

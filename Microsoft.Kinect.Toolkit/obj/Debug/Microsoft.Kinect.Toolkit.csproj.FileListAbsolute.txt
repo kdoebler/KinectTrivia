@@ -1,0 +1,66 @@
+C:\Users\Kevin\Dropbox\Personal\Projects\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.dll
+C:\Users\Kevin\Dropbox\Personal\Projects\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\Kevin\Dropbox\Personal\Projects\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.dll.CodeAnalysisLog.xml
+C:\Users\Kevin\Dropbox\Personal\Projects\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.dll.lastcodeanalysissucceeded
+C:\Users\Kevin\Dropbox\Personal\Projects\Microsoft.Kinect.Toolkit\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Kevin\Dropbox\Personal\Projects\Microsoft.Kinect.Toolkit\obj\Debug\KinectSensorChooserUI.baml
+C:\Users\Kevin\Dropbox\Personal\Projects\Microsoft.Kinect.Toolkit\obj\Debug\KinectSensorChooserUI.g.cs
+C:\Users\Kevin\Dropbox\Personal\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit_MarkupCompile.cache
+C:\Users\Kevin\Dropbox\Personal\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.g.resources
+C:\Users\Kevin\Dropbox\Personal\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.Properties.Resources.resources
+C:\Users\Kevin\Dropbox\Personal\Projects\Microsoft.Kinect.Toolkit\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Kevin\Dropbox\Personal\Projects\Microsoft.Kinect.Toolkit\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Kevin\Dropbox\Personal\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.dll
+C:\Users\Kevin\Dropbox\Personal\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\kdoebler\Desktop\Projects\Projects\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.dll
+C:\Users\kdoebler\Desktop\Projects\Projects\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\kdoebler\Desktop\Projects\Projects\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.dll.CodeAnalysisLog.xml
+C:\Users\kdoebler\Desktop\Projects\Projects\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.dll.lastcodeanalysissucceeded
+C:\Users\kdoebler\Desktop\Projects\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.csprojResolveAssemblyReference.cache
+C:\Users\kdoebler\Desktop\Projects\Projects\Microsoft.Kinect.Toolkit\obj\Debug\KinectSensorChooserUI.baml
+C:\Users\kdoebler\Desktop\Projects\Projects\Microsoft.Kinect.Toolkit\obj\Debug\KinectSensorChooserUI.g.cs
+C:\Users\kdoebler\Desktop\Projects\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit_MarkupCompile.cache
+C:\Users\kdoebler\Desktop\Projects\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.g.resources
+C:\Users\kdoebler\Desktop\Projects\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.Properties.Resources.resources
+C:\Users\kdoebler\Desktop\Projects\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.csproj.GenerateResource.Cache
+C:\Users\kdoebler\Desktop\Projects\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.dll
+C:\Users\kdoebler\Desktop\Projects\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\kdoebler\Dropbox\Projects\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.dll
+C:\Users\kdoebler\Dropbox\Projects\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\kdoebler\Dropbox\Projects\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.dll.CodeAnalysisLog.xml
+C:\Users\kdoebler\Dropbox\Projects\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.dll.lastcodeanalysissucceeded
+C:\Users\kdoebler\Dropbox\Projects\Microsoft.Kinect.Toolkit\obj\Debug\KinectSensorChooserUI.baml
+C:\Users\kdoebler\Dropbox\Projects\Microsoft.Kinect.Toolkit\obj\Debug\KinectSensorChooserUI.g.cs
+C:\Users\kdoebler\Dropbox\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit_MarkupCompile.cache
+C:\Users\kdoebler\Dropbox\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.g.resources
+C:\Users\kdoebler\Dropbox\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.Properties.Resources.resources
+C:\Users\kdoebler\Dropbox\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.csproj.GenerateResource.Cache
+C:\Users\kdoebler\Dropbox\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.dll
+C:\Users\kdoebler\Dropbox\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\Kevin\Dropbox\Projects\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.dll
+C:\Users\Kevin\Dropbox\Projects\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\Kevin\Dropbox\Projects\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.dll.CodeAnalysisLog.xml
+C:\Users\Kevin\Dropbox\Projects\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.dll.lastcodeanalysissucceeded
+C:\Users\Kevin\Dropbox\Projects\Microsoft.Kinect.Toolkit\obj\Debug\KinectSensorChooserUI.baml
+C:\Users\Kevin\Dropbox\Projects\Microsoft.Kinect.Toolkit\obj\Debug\KinectSensorChooserUI.g.cs
+C:\Users\Kevin\Dropbox\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit_MarkupCompile.cache
+C:\Users\Kevin\Dropbox\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.g.resources
+C:\Users\Kevin\Dropbox\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.Properties.Resources.resources
+C:\Users\Kevin\Dropbox\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.dll
+C:\Users\Kevin\Dropbox\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\Kevin\Dropbox\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.csproj.GenerateResource.Cache
+C:\Users\kdoebler\Dropbox\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Dropbox\Projects\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.csprojResolveAssemblyReference.cache
+C:\Users\Samsung\Google Drive\Programming\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.csprojResolveAssemblyReference.cache
+C:\Users\Samsung\Google Drive\Programming\Microsoft.Kinect.Toolkit\obj\Debug\KinectSensorChooserUI.baml
+C:\Users\Samsung\Google Drive\Programming\Microsoft.Kinect.Toolkit\obj\Debug\KinectSensorChooserUI.g.cs
+C:\Users\Samsung\Google Drive\Programming\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit_MarkupCompile.cache
+C:\Users\Samsung\Google Drive\Programming\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.g.resources
+C:\Users\Samsung\Google Drive\Programming\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.Properties.Resources.resources
+C:\Users\Samsung\Google Drive\Programming\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.csproj.GenerateResource.Cache
+C:\Users\Samsung\Google Drive\Programming\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\Samsung\Google Drive\Programming\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.dll
+C:\Users\Samsung\Google Drive\Programming\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\Samsung\Google Drive\Programming\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.dll.CodeAnalysisLog.xml
+C:\Users\Samsung\Google Drive\Programming\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.dll.lastcodeanalysissucceeded
+C:\Users\Samsung\Google Drive\Programming\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.dll

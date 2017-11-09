@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="Model1StoreContainer">
+    <EntitySet Name="Answers" EntityType="Model1.Store.Answers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Questions" EntityType="Model1.Store.Questions" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Answers">
+    <Key>
+      <PropertyRef Name="AnsID" />
+    </Key>
+    <Property Name="AnsID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AnsQueID" Type="int" Nullable="false" />
+    <Property Name="AnsImagePath" Type="varchar" MaxLength="255" />
+    <Property Name="AnsCorrect" Type="bit" Nullable="false" />
+    <Property Name="AnsInactive" Type="bit" Nullable="false" />
+    <Property Name="AnsText" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Questions">
+    <Key>
+      <PropertyRef Name="QueID" />
+    </Key>
+    <Property Name="QueID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="QueQuestion" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="QueDropSpeed" Type="int" />
+    <Property Name="QueInactive" Type="bit" Nullable="false" />
+  </EntityType>
+</Schema>

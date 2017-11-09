@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Answers" EntityType="Model1.Answer" />
+    <EntitySet Name="Questions" EntityType="Model1.Question" />
+  </EntityContainer>
+  <EntityType Name="Answer">
+    <Key>
+      <PropertyRef Name="AnsID" />
+    </Key>
+    <Property Type="Int32" Name="AnsID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="AnsQueID" Nullable="false" />
+    <Property Type="String" Name="AnsImagePath" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="AnsCorrect" Nullable="false" />
+    <Property Type="Boolean" Name="AnsInactive" Nullable="false" />
+    <Property Type="String" Name="AnsText" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Question">
+    <Key>
+      <PropertyRef Name="QueID" />
+    </Key>
+    <Property Type="Int32" Name="QueID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="QueQuestion" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="QueDropSpeed" />
+    <Property Type="Boolean" Name="QueInactive" Nullable="false" />
+  </EntityType>
+</Schema>

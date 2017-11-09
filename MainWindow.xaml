@@ -1,0 +1,25 @@
+﻿<Window x:Class="TriviaGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:kt="clr-namespace:Microsoft.Samples.Kinect.WpfViewers;assembly=Microsoft.Samples.Kinect.WpfViewers"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:toolkit="clr-namespace:Microsoft.Kinect.Toolkit;assembly=Microsoft.Kinect.Toolkit"
+        Title="Kinect Shape Game" FontStyle="Italic" SizeToContent="WidthAndHeight"
+        Loaded="WindowLoaded" Closed="WindowClosed" Closing="WindowClosing" WindowStartupLocation="CenterScreen" WindowState="Maximized" Width="1920" Height="1080">
+    <Grid>
+        <StackPanel Orientation="Vertical" Background="#FF46BC44">
+            <Grid MinHeight="500" MinWidth="500">
+                <Canvas Margin="0" Name="playfield" Height="1080" Width="1920" SizeChanged="PlayfieldSizeChanged">
+                    <Canvas.Background>
+                        <ImageBrush ImageSource="/TriviaGame;component/Resources/stadiumResize.jpg" />
+                    </Canvas.Background>
+                </Canvas>
+                <kt:KinectColorViewer Margin="0,18,19,0" HorizontalAlignment="Right" Width="160" Height="120" VerticalAlignment="Top" KinectSensorManager="{Binding}"/>
+                <toolkit:KinectSensorChooserUI x:Name="SensorChooserUI" IsListening="True"  HorizontalAlignment="Right" VerticalAlignment="Top" />
+            </Grid>
+            <CheckBox x:Name="enableAec" Foreground="White" FontSize="20" Margin="19,0,0,18" HorizontalAlignment="Left" VerticalAlignment="Bottom" Visibility="Collapsed" Checked="EnableAecChecked" Unchecked="EnableAecChecked" IsEnabled="False">
+                Enable Echo Cancellation on Default Speakers
+            </CheckBox>
+            
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,75 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/d:Properties/f:Resources.resx" caret="6638" fromTop="28" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:UIValidation.cs" caret="140" fromTop="8" />
+      <File id="4DE23893-27E7-423F-9BB6-BA21DAC2C45E/f:KinectSensorManager.cs" caret="29592" fromTop="30" />
+      <File id="C6F9C31B-6130-4443-A5CC-EF0664552ECD/f:ContextEventWrapper.cs" caret="6945" fromTop="29" />
+      <File id="C6F9C31B-6130-4443-A5CC-EF0664552ECD/f:KinectSensorChooser.cs" caret="4906" fromTop="20" />
+      <File id="4DE23893-27E7-423F-9BB6-BA21DAC2C45E/f:KinectSkeletonViewer.xaml.cs" caret="9034" fromTop="26" />
+      <File id="4DE23893-27E7-423F-9BB6-BA21DAC2C45E/f:Converters.cs" caret="1137" fromTop="31" />
+      <File id="4DE23893-27E7-423F-9BB6-BA21DAC2C45E/f:KinectColorViewer.xaml.cs" caret="4034" fromTop="21" />
+      <File id="4DE23893-27E7-423F-9BB6-BA21DAC2C45E/f:KinectViewer.cs" caret="5723" fromTop="37" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:XMLFile1.xml" caret="42" fromTop="1" />
+      <File id="C6F9C31B-6130-4443-A5CC-EF0664552ECD/f:KinectSensorChooserUI.xaml.cs" caret="6916" fromTop="23" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingShapes.cs" caret="814" fromTop="26" />
+      <File id="C6F9C31B-6130-4443-A5CC-EF0664552ECD/f:RelayCommand.cs" caret="1461" fromTop="37" />
+      <File id="C6F9C31B-6130-4443-A5CC-EF0664552ECD/f:KinectSensorChooserUiViewModel.cs" caret="10113" fromTop="26" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:MainWindow.xaml" caret="773" fromTop="6" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:app.config" caret="510" fromTop="6" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="1665" fromTop="0" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:SpeechRecognizer.cs" caret="705" fromTop="16" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:MainWindow.xaml.cs" caret="17611" fromTop="17" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="18170" fromTop="26" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:MainWindow.xaml.cs" caret="17683" fromTop="15" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:MainWindow.xaml.cs" caret="17731" fromTop="16" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:MainWindow.xaml.cs" caret="17834" fromTop="20" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:MainWindow.xaml.cs" caret="17550" fromTop="10" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:MainWindow.xaml.cs" caret="1377" fromTop="14" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:MainWindow.xaml.cs" caret="4762" fromTop="14" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:MainWindow.xaml.cs" caret="5898" fromTop="45" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="17381" fromTop="12" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="3299" fromTop="7" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="18170" fromTop="20" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="4342" fromTop="27" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="5084" fromTop="52" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="5136" fromTop="9" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="5916" fromTop="32" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="13815" fromTop="21" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="18170" fromTop="34" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="3251" fromTop="48" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="15628" fromTop="11" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="17079" fromTop="52" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="17101" fromTop="18" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="18674" fromTop="27" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="1045" fromTop="12" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="1693" fromTop="29" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="17381" fromTop="18" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="7999" fromTop="18" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="0" fromTop="0" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="9761" fromTop="32" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="3123" fromTop="10" />
+      <File id="E61846BF-FE80-4B50-A7FF-CFCD9E4A4815/f:FallingThings.cs" caret="3828" fromTop="11" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+</Configuration>

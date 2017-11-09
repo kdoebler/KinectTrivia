@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Database1Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="Database1ModelStoreContainer">
+          <EntitySet Name="Answers" EntityType="Database1Model.Store.Answers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Games" EntityType="Database1Model.Store.Games" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Guesses" EntityType="Database1Model.Store.Guesses" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Questions" EntityType="Database1Model.Store.Questions" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Answers_Questions" Association="Database1Model.Store.FK_Answers_Questions">
+            <End Role="Questions" EntitySet="Questions" />
+            <End Role="Answers" EntitySet="Answers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Guesses_Answers" Association="Database1Model.Store.FK_Guesses_Answers">
+            <End Role="Answers" EntitySet="Answers" />
+            <End Role="Guesses" EntitySet="Guesses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Guesses_Games" Association="Database1Model.Store.FK_Guesses_Games">
+            <End Role="Games" EntitySet="Games" />
+            <End Role="Guesses" EntitySet="Guesses" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Answers">
+          <Key>
+            <PropertyRef Name="AnsID" />
+          </Key>
+          <Property Name="AnsID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AnsQueID" Type="int" Nullable="false" />
+          <Property Name="AnsImagePath" Type="varchar" MaxLength="255" />
+          <Property Name="AnsCorrect" Type="bit" Nullable="false" />
+          <Property Name="AnsInactive" Type="bit" Nullable="false" />
+          <Property Name="AnsText" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Games">
+          <Key>
+            <PropertyRef Name="GamID" />
+          </Key>
+          <Property Name="GamID" Type="int" Nullable="false" />
+          <Property Name="GamPlayerName" Type="varchar" MaxLength="255" />
+          <Property Name="GamScore" Type="int" />
+          <Property Name="GamDateTime" Type="datetime" />
+          <Property Name="GamDifficulty" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Guesses">
+          <Key>
+            <PropertyRef Name="GueID" />
+          </Key>
+          <Property Name="GueID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GueAnsID" Type="int" Nullable="false" />
+          <Property Name="GueGamID" Type="int" />
+        </EntityType>
+        <EntityType Name="Questions">
+          <Key>
+            <PropertyRef Name="QueID" />
+          </Key>
+          <Property Name="QueID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="QueQuestion" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="QueDropSpeed" Type="int" />
+          <Property Name="QueInactive" Type="bit" Nullable="false" />
+          <Property Name="QueDifficulty" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Answers_Questions">
+          <End Role="Questions" Type="Database1Model.Store.Questions" Multiplicity="1" />
+          <End Role="Answers" Type="Database1Model.Store.Answers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Questions">
+              <PropertyRef Name="QueID" />
+            </Principal>
+            <Dependent Role="Answers">
+              <PropertyRef Name="AnsQueID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Guesses_Answers">
+          <End Role="Answers" Type="Database1Model.Store.Answers" Multiplicity="1" />
+          <End Role="Guesses" Type="Database1Model.Store.Guesses" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Answers">
+              <PropertyRef Name="AnsID" />
+            </Principal>
+            <Dependent Role="Guesses">
+              <PropertyRef Name="GueAnsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Guesses_Games">
+          <End Role="Games" Type="Database1Model.Store.Games" Multiplicity="0..1" />
+          <End Role="Guesses" Type="Database1Model.Store.Guesses" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Games">
+              <PropertyRef Name="GamID" />
+            </Principal>
+            <Dependent Role="Guesses">
+              <PropertyRef Name="GueGamID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Database1Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="Trivia" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Answers" EntityType="Database1Model.Answer" />
+          <EntitySet Name="Questions" EntityType="Database1Model.Question" />
+          <EntitySet Name="Guesses" EntityType="Database1Model.Guess" />
+          <EntitySet Name="Games" EntityType="Database1Model.Game" />
+          <AssociationSet Name="FK_Guesses_Games" Association="Database1Model.FK_Guesses_Games">
+            <End Role="Game" EntitySet="Games" />
+            <End Role="Guess" EntitySet="Guesses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Answers_Questions" Association="Database1Model.FK_Answers_Questions">
+            <End Role="Question" EntitySet="Questions" />
+            <End Role="Answer" EntitySet="Answers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Guesses_Answers" Association="Database1Model.FK_Guesses_Answers">
+            <End Role="Answer" EntitySet="Answers" />
+            <End Role="Guess" EntitySet="Guesses" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Answer">
+          <Key>
+            <PropertyRef Name="AnsID" />
+          </Key>
+          <Property Name="AnsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AnsQueID" Type="Int32" Nullable="false" />
+          <Property Name="AnsImagePath" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="AnsCorrect" Type="Boolean" Nullable="false" />
+          <Property Name="AnsInactive" Type="Boolean" Nullable="false" />
+          <Property Name="AnsText" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Question" Relationship="Database1Model.FK_Answers_Questions" FromRole="Answer" ToRole="Question" />
+          <NavigationProperty Name="Guesses" Relationship="Database1Model.FK_Guesses_Answers" FromRole="Answer" ToRole="Guess" />
+        </EntityType>
+        <EntityType Name="Question">
+          <Key>
+            <PropertyRef Name="QueID" />
+          </Key>
+          <Property Name="QueID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="QueQuestion" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="QueDropSpeed" Type="Int32" />
+          <Property Name="QueInactive" Type="Boolean" Nullable="false" />
+          <Property Type="Int32" Name="QueDifficulty" Nullable="false" />
+          <NavigationProperty Name="Answers" Relationship="Database1Model.FK_Answers_Questions" FromRole="Question" ToRole="Answer" />
+        </EntityType>
+        <EntityType Name="Guess">
+          <Key>
+            <PropertyRef Name="GueID" />
+          </Key>
+          <Property Type="Int32" Name="GueID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="GueAnsID" Nullable="false" />
+          <Property Type="Int32" Name="GueGamID" />
+          <NavigationProperty Name="Game" Relationship="Database1Model.FK_Guesses_Games" FromRole="Guess" ToRole="Game" />
+          <NavigationProperty Name="Answer" Relationship="Database1Model.FK_Guesses_Answers" FromRole="Guess" ToRole="Answer" />
+        </EntityType>
+        <EntityType Name="Game">
+          <Key>
+            <PropertyRef Name="GamID" />
+          </Key>
+          <Property Type="Int32" Name="GamID" Nullable="false" />
+          <Property Type="String" Name="GamPlayerName" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="GamScore" />
+          <Property Type="DateTime" Name="GamDateTime" />
+          <Property Type="Int32" Name="GamDifficulty" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Guesses" Relationship="Database1Model.FK_Guesses_Games" FromRole="Game" ToRole="Guess" />
+        </EntityType>
+        <Association Name="FK_Guesses_Games">
+          <End Type="Database1Model.Game" Role="Game" Multiplicity="0..1" />
+          <End Type="Database1Model.Guess" Role="Guess" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Game">
+              <PropertyRef Name="GamID" />
+            </Principal>
+            <Dependent Role="Guess">
+              <PropertyRef Name="GueGamID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Answers_Questions">
+          <End Type="Database1Model.Question" Role="Question" Multiplicity="1" />
+          <End Type="Database1Model.Answer" Role="Answer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Question">
+              <PropertyRef Name="QueID" />
+            </Principal>
+            <Dependent Role="Answer">
+              <PropertyRef Name="AnsQueID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Guesses_Answers">
+          <End Type="Database1Model.Answer" Role="Answer" Multiplicity="1" />
+          <End Type="Database1Model.Guess" Role="Guess" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Answer">
+              <PropertyRef Name="AnsID" />
+            </Principal>
+            <Dependent Role="Guess">
+              <PropertyRef Name="GueAnsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Database1ModelStoreContainer" CdmEntityContainer="Trivia">
+          <EntitySetMapping Name="Answers">
+            <EntityTypeMapping TypeName="Database1Model.Answer">
+              <MappingFragment StoreEntitySet="Answers">
+                <ScalarProperty Name="AnsID" ColumnName="AnsID" />
+                <ScalarProperty Name="AnsQueID" ColumnName="AnsQueID" />
+                <ScalarProperty Name="AnsImagePath" ColumnName="AnsImagePath" />
+                <ScalarProperty Name="AnsCorrect" ColumnName="AnsCorrect" />
+                <ScalarProperty Name="AnsInactive" ColumnName="AnsInactive" />
+                <ScalarProperty Name="AnsText" ColumnName="AnsText" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Questions">
+            <EntityTypeMapping TypeName="Database1Model.Question">
+              <MappingFragment StoreEntitySet="Questions">
+                <ScalarProperty Name="QueDifficulty" ColumnName="QueDifficulty" />
+                <ScalarProperty Name="QueID" ColumnName="QueID" />
+                <ScalarProperty Name="QueQuestion" ColumnName="QueQuestion" />
+                <ScalarProperty Name="QueDropSpeed" ColumnName="QueDropSpeed" />
+                <ScalarProperty Name="QueInactive" ColumnName="QueInactive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Guesses">
+            <EntityTypeMapping TypeName="Database1Model.Guess">
+              <MappingFragment StoreEntitySet="Guesses">
+                <ScalarProperty Name="GueGamID" ColumnName="GueGamID" />
+                <ScalarProperty Name="GueAnsID" ColumnName="GueAnsID" />
+                <ScalarProperty Name="GueID" ColumnName="GueID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Games">
+            <EntityTypeMapping TypeName="Database1Model.Game">
+              <MappingFragment StoreEntitySet="Games">
+                <ScalarProperty Name="GamDifficulty" ColumnName="GamDifficulty" />
+                <ScalarProperty Name="GamDateTime" ColumnName="GamDateTime" />
+                <ScalarProperty Name="GamScore" ColumnName="GamScore" />
+                <ScalarProperty Name="GamPlayerName" ColumnName="GamPlayerName" />
+                <ScalarProperty Name="GamID" ColumnName="GamID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="trivia">
+        <EntityTypeShape EntityType="Database1Model.Answer" Width="1.5" PointX="0.75" PointY="0.75" Height="2.172587890625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Question" Width="1.5" PointX="2.75" PointY="0.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Guess" Width="1.5" PointX="0.75" PointY="3.75" Height="1.4033821614583322" />
+        <EntityTypeShape EntityType="Database1Model.Game" Width="1.5" PointX="0.75" PointY="6.5" Height="2.1725878906249996" />
+        <AssociationConnector Association="Database1Model.FK_Guesses_Games" >
+          <ConnectorPoint PointX="1.5" PointY="6.5" />
+          <ConnectorPoint PointX="1.5" PointY="5.7302864583333326" />
+        </AssociationConnector>
+        <AssociationConnector Association="Database1Model.FK_Answers_Questions" >
+          <ConnectorPoint PointX="2.75" PointY="1.8362939453125" />
+          <ConnectorPoint PointX="2.25" PointY="1.8362939453125" />
+        </AssociationConnector>
+        <AssociationConnector Association="Database1Model.FK_Guesses_Answers" >
+          <ConnectorPoint PointX="1.5" PointY="3.3071907552083331" />
+          <ConnectorPoint PointX="1.5" PointY="3.75" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

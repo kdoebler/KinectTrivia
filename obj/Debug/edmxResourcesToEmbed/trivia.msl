@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Database1ModelStoreContainer" CdmEntityContainer="Trivia">
+    <EntitySetMapping Name="Answers">
+      <EntityTypeMapping TypeName="Database1Model.Answer">
+        <MappingFragment StoreEntitySet="Answers">
+          <ScalarProperty Name="AnsID" ColumnName="AnsID" />
+          <ScalarProperty Name="AnsQueID" ColumnName="AnsQueID" />
+          <ScalarProperty Name="AnsImagePath" ColumnName="AnsImagePath" />
+          <ScalarProperty Name="AnsCorrect" ColumnName="AnsCorrect" />
+          <ScalarProperty Name="AnsInactive" ColumnName="AnsInactive" />
+          <ScalarProperty Name="AnsText" ColumnName="AnsText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Questions">
+      <EntityTypeMapping TypeName="Database1Model.Question">
+        <MappingFragment StoreEntitySet="Questions">
+          <ScalarProperty Name="QueDifficulty" ColumnName="QueDifficulty" />
+          <ScalarProperty Name="QueID" ColumnName="QueID" />
+          <ScalarProperty Name="QueQuestion" ColumnName="QueQuestion" />
+          <ScalarProperty Name="QueDropSpeed" ColumnName="QueDropSpeed" />
+          <ScalarProperty Name="QueInactive" ColumnName="QueInactive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Guesses">
+      <EntityTypeMapping TypeName="Database1Model.Guess">
+        <MappingFragment StoreEntitySet="Guesses">
+          <ScalarProperty Name="GueGamID" ColumnName="GueGamID" />
+          <ScalarProperty Name="GueAnsID" ColumnName="GueAnsID" />
+          <ScalarProperty Name="GueID" ColumnName="GueID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Games">
+      <EntityTypeMapping TypeName="Database1Model.Game">
+        <MappingFragment StoreEntitySet="Games">
+          <ScalarProperty Name="GamDifficulty" ColumnName="GamDifficulty" />
+          <ScalarProperty Name="GamDateTime" ColumnName="GamDateTime" />
+          <ScalarProperty Name="GamScore" ColumnName="GamScore" />
+          <ScalarProperty Name="GamPlayerName" ColumnName="GamPlayerName" />
+          <ScalarProperty Name="GamID" ColumnName="GamID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
